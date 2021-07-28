@@ -1,0 +1,238 @@
+html, body ,#root{
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+.app{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* HEADER */
+.header{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 4px 16px;
+  height: 42px;
+  background: #696969;
+}
+/* ADMIN.BIKE-BOOKING.COM */
+.sign{
+  color: #E8E8E8;
+  position: static;
+  width: 318px;
+  height: 38px;
+  left: 16px;
+  top: 4px;
+  font-family: 'Saira Stencil One', cursive;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 38px;
+}
+/* FOOTER */
+.footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px;
+  background: #696969;
+}
+.footer span{
+  font-family: 'Saira';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 31px;
+  display: flex;
+  align-items: flex-end;
+  text-align: center;
+
+  color: #CBCACA;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 0px 10px 0px 0px;
+}
+.footer span.name{
+  color: #FFFFFF;
+}
+
+/* MAIN */
+.main {
+  flex-grow:1;
+  display: flex;
+  flex-direction: row;
+}
+.left-side{
+  min-width: 500px;
+  width: 55%;  
+  border-right: 1px solid #C4C4C4;
+  padding:10px;
+}
+.right-side{
+  flex-grow: 1;
+}
+/* CARD */
+.card{
+  position: relative;
+  width: 100%;
+  height: 83px;
+  margin-bottom: 10px;
+  background: #E8E8E8;
+  box-sizing: border-box;
+  border-radius: 10px;
+  padding-left: 18px;
+  padding-top: 12px;
+}
+.card.Available{
+  border: 2px solid #6FCF97;
+}
+.card.Busy{
+  border: 2px solid #F2994A;
+}
+.card.Unavailable{
+  background: #E8E8E8;
+  opacity: 0.5;
+  border: 2px solid #EB5757;
+  border-radius: 10px;
+}
+.label{
+  /* LABEL */
+  font-style: normal;
+  font-size: 14px;
+  line-height: 22px;
+
+  color: #333333;
+}
+.label span{
+  font-family: 'Saira';
+}
+
+/* ID */
+.id{
+  position: static;
+  right: 71.05%;
+  top: 58.82%;
+
+  font-family: 'Saira';
+  font-size: 8px;
+  line-height: 13px;
+  color: #717171;
+}
+/* STATUS: */
+.status{
+  position: static;
+  font-family: 'Saira';
+  font-size: 14px;
+  line-height: 22px;
+  color: #333333;
+}
+.status select{
+  font-family: 'Saira';
+  font-size: 14px;
+  margin-left: 18px;
+  border:0px;
+  outline:0px;
+  background: #E8E8E8;
+}
+/* PRICE */
+.price{
+  position: absolute;
+  bottom: 0;
+  right: 13px;
+  font-weight: 1000;
+  font-family: 'Saira';
+  font-size: 24px;
+  line-height: 38px;
+}
+.card img{
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  top:12px;
+  right: 12px;
+}
+.card img:hover{
+  cursor: pointer;
+}
+/* ADD BIKE FORM */
+.input-container{
+  display:flex;
+  flex-direction:row;
+  justify-content: space-between;
+}
+.input-container div{
+  display:flex;
+  flex-direction:column;
+  width:49%;
+}
+.add-bike input{
+  font-family: 'Saira';
+  padding: 5px 16px;
+  height: 19px;
+  background: #E8E8E8;
+  border-radius: 5px;
+  border:none;
+  outline: none;
+  margin-bottom: 10px;
+}
+.add-bike{
+  display: flex;
+  padding:10px;
+  flex-direction: column;
+}
+.add-bike textarea{
+  font-family: 'Saira';
+  padding: 5px 16px;
+  height: 75px;
+  border:none;
+  outline: none;
+  background: #E8E8E8;
+  border-radius: 5px;
+  resize: none;
+  align-self: stretch;
+  flex-grow: 0;
+}
+.button-container{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.button-container button{
+  font-family: 'Saira';
+  color:white;
+  position: static;
+  width: 49%;
+  height: 24px;
+  border:none;
+  cursor: pointer;
+  background: #696969;
+  border-radius: 5px;
+}
+hr {
+    height: 1px;
+    border: none; /* Убираем границу для браузера Firefox */  
+    color: #C4C4C4; /* Цвет линии для остальных браузеров */
+    background-color: #C4C4C4;
+}
+/* STATISTICS */
+.stats{
+  margin-left:10px;
+}
+.stats span{
+  font-family: 'Saira';
+}
+b{
+  font-family: 'Times New Roman'
+}
+.stats h2{
+  margin:0px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 28px;
+}
